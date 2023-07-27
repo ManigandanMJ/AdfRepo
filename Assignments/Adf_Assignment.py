@@ -87,7 +87,7 @@ update_df.createOrReplaceTempView("source_view")
 # COMMAND ----------
 
 from delta.tables import * 
-update_df.write.format("delta").mode("overwrite").option('path','/mnt/adf_assignment/gold').saveAsTable("animals_delta")
+update_df.write.format("delta").mode("overwrite").option('path','/mnt/adf_assignment/gold').saveAsTable("default.animals_delta")
 
 # COMMAND ----------
 
